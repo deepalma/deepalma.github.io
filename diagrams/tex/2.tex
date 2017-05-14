@@ -1,0 +1,15 @@
+\documentclass[border=1mm]{standalone}
+\usepackage{adjustbox}
+\usepackage{tikz-cd}
+\usepackage{mathrsfs}
+\begin{document}
+\adjustbox{scale=2,center}{%
+    \begin{tikzcd}[row sep=huge, column sep=huge, text height=1.5ex, text depth=0.25ex]
+        a   \arrow[r, swap, "f"]
+            \arrow[rr, bend left=30, "g \circ f"]
+                & b
+                \arrow[r, swap, "g"]
+                    & c
+    \end{tikzcd}
+}
+\end{document}
